@@ -51,7 +51,7 @@ nav {
 
 @media only screen and (min-width: 800px) {
   .grid {
-    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-columns: 200px auto 200px;
     grid-template-areas:
       "header header header"
       "nav main sidebar"
@@ -60,5 +60,10 @@ nav {
 
   main {
     min-height: 70vh;
+  }
+
+  nav,
+  .sidebar {
+    max-width: 200px;
   }
 }
