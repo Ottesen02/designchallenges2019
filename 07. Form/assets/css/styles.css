@@ -1,0 +1,90 @@
+html {
+  font-size: 20px;
+}
+
+form {
+  position: relative;
+  padding: 10px 18px 20px 24px;
+  background: #fff;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 50px 0px hsla(0, 10%, 35%, 0.5);
+}
+
+label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  display: flex;
+  margin: 10px 0;
+  width: 100%;
+  align-items: center;
+}
+
+input,
+textarea {
+  padding: 8px 20px 8px 13px;
+  background: hsla(28, 25%, 95%, 1);
+  font-size: 0.75rem;
+  width: 70%;
+  resize: none;
+  font-weight: 400;
+  border-radius: 5px;
+  border: none;
+  -webkit-appearance: none;
+  outline: none;
+  transition: all 0.25s ease;
+  margin: 0 0 0 auto;
+}
+
+input:focus,
+textarea:focus {
+  background: hsla(28, 25%, 95%, 0);
+  border: 1px solid hsla(28, 25%, 95%, 1);
+}
+
+input:focus {
+  background-position-x: calc(100% - 16px);
+  background-position-y: 50%;
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  /* color: currentColor; */
+}
+
+button[type="submit"] {
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  font-size: 0.8rem;
+  border: 0;
+  background: hsla(0, 10%, 35%, 1);
+  color: #fff;
+  float: right;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+button[type="submit"]:hover {
+  background: rgb(105, 84, 84);
+  box-shadow: 1px 1px 2px hsla(0, 10%, 35%, 0.5);
+}
+
+input[name="zip"] {
+  width: 23%;
+  margin-right: -42px;
+}
+
+input[name="city"] {
+  width: 42%;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  background: #ece5df;
+}
